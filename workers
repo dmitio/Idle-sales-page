@@ -13,8 +13,11 @@ addEventListener('fetch', event => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--标题-->
     <title>nanyiの售卖</title>
+    <!--picture-->
     <link rel="icon" type="image/webp" href="https://i2.100024.xyz/2024/01/18/xz40z7.webp">
+    <!--灯笼-->
     <script src="https://cdn.jsdelivr.net/gh/no2y/jslib@main/lanterns/lanterns.min.js"></script>
     <style>
         body {
@@ -123,65 +126,6 @@ addEventListener('fetch', event => {
           </style>
       </head>
       <body>
-      <div class="container">
-          <div class="background-overlay"></div> 
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="shine"></div>
-          <div class="card-title" style="text-align: center; font-size: 20px;"><strong>774488.xyz</strong></div>
-          <div class="card-description" style="text-align: center;"><strong>Spaceship 2032/6/24</strong></div>
-          <p style="text-align: center; margin: 0;"><strong>售价：75￥</strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-
-      
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong>VPS剩余价值计算器</strong></div>
-          <div class="card-description" style="text-align: center;"><strong>剩余价值几何?</strong> </div>
-          <p style="text-align: center; margin: 0;"><strong></strong></p>
-          <a href="https://ggss.eu.org/" class="card-button" style="display: block; text-align: center; margin-top: 10px;">要不算算?</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong>代注册.xyz</strong></div>
-          <div class="card-description" style="text-align: center;"><strong>Spaceship 至2033年</strong> </div>
-          <p style="text-align: center; margin: 0;"><strong>售价：60￥</strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
-          <div class="card-description" style="text-align: center;"><strong>Google</strong> </div>
-          <p style="text-align: center; margin: 0;"><strong></strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
-          <div class="card-description" style="text-align: center;"><strong></strong></div>
-          <p style="text-align: center; margin: 0;"><strong></strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong>o0o.live</strong></div>
-          <div class="card-description" style="text-align: center;"><strong>Spaceship 2024/1/17</strong></div>
-          <p style="text-align: center; margin: 0;"><strong>售价：88￥</strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
-          <div class="card-description" style="text-align: center;"><strong>I</strong></div>
-          <p style="text-align: center; margin: 0;"><strong</strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
-          <div class="card-description" style="text-align: center;"><strong>am</strong></div>
-          <p style="text-align: center; margin: 0;"><strong></strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
-          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
-          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
-          <div class="card-description" style="text-align: center;"><strong>nanyi</strong></div>
-          <p style="text-align: center; margin: 0;"><strong></strong></p>
-          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
-      </div>
       <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
           <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
           <div class="card-description" style="text-align: center;"><strong></strong></div>
