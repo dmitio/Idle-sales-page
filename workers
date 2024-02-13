@@ -1,0 +1,226 @@
+addEventListener('fetch', event => {
+    event.respondWith(handleRequest(event.request))
+  })
+  
+  async function handleRequest(request) {
+    const url = new URL(request.url)
+  
+    if (url.pathname === '/') {
+      const html = `
+      <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nanyiの售卖</title>
+    <link rel="icon" type="image/webp" href="https://i2.100024.xyz/2024/01/18/xz40z7.webp">
+    <script src="https://cdn.jsdelivr.net/gh/no2y/jslib@main/lanterns/lanterns.min.js"></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://i2.100024.xyz/2024/01/19/lx37dv.webp');
+            background-color: #f5f5f5;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.8));
+            cursor: pointer;
+            height: 180px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card:hover {
+            transform: scale(1.1) translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card.mobile {
+            font-size: 16px;
+        }
+
+        .card-title,
+        .card-description {
+            text-align: center;
+            font-size: 18px; 
+            margin-bottom: 9px; 
+        }
+        
+        .card-button {
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 15px;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            width: 90px; 
+            height: 25px; 
+            display: block;
+            margin: 0 auto;
+        }
+
+        .card-button:hover {
+            background-color: #359634;
+        }
+
+        .background-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.5);
+            z-index: -1;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+          }
+          .card {
+            background-color: rgba(128, 128, 128, 0);
+            padding: 20px;
+          }
+          
+          @media (max-width: 768px) {
+            .container {
+              grid-template-columns: repeat(1, 1fr);
+            }
+          }  
+          </style>
+      </head>
+      <body>
+      <div class="container">
+          <div class="background-overlay"></div> 
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="shine"></div>
+          <div class="card-title" style="text-align: center; font-size: 20px;"><strong>774488.xyz</strong></div>
+          <div class="card-description" style="text-align: center;"><strong>Spaceship 2032/6/24</strong></div>
+          <p style="text-align: center; margin: 0;"><strong>售价：75￥</strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+
+      
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong>VPS剩余价值计算器</strong></div>
+          <div class="card-description" style="text-align: center;"><strong>剩余价值几何?</strong> </div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://ggss.eu.org/" class="card-button" style="display: block; text-align: center; margin-top: 10px;">要不算算?</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong>代注册.xyz</strong></div>
+          <div class="card-description" style="text-align: center;"><strong>Spaceship 至2033年</strong> </div>
+          <p style="text-align: center; margin: 0;"><strong>售价：60￥</strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong>Google</strong> </div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong></strong></div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong>o0o.live</strong></div>
+          <div class="card-description" style="text-align: center;"><strong>Spaceship 2024/1/17</strong></div>
+          <p style="text-align: center; margin: 0;"><strong>售价：88￥</strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong>I</strong></div>
+          <p style="text-align: center; margin: 0;"><strong</strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong>am</strong></div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+          <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong>nanyi</strong></div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+      <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong></strong></div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+      <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong></strong></div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+      <div class="card" style="height: 200px; display: flex; flex-direction: column; justify-content: center;">
+          <div class="card-title" style="text-align: center;font-size: 20px;"><strong></strong></div>
+          <div class="card-description" style="text-align: center;"><strong></strong></div>
+          <p style="text-align: center; margin: 0;"><strong></strong></p>
+          <a href="https://t.me/nanyi_chat_bot" class="card-button" style="display: block; text-align: center; margin-top: 10px;">Contact Me</a>
+      </div>
+      </div>
+          <script>
+              if (window.innerWidth <= 768) {
+                  var cards = document.getElementsByClassName('card');
+                  for (var i = 0; i < cards.length; i++) {
+                      cards[i].classList.add('mobile');
+                  }
+              }
+          </script>
+      </body>
+      </html>
+    `
+    return new Response(html, {
+      headers: {
+        'content-type': 'text/html;charset=UTF-8',
+      },
+    })
+  } else {
+    const response = await fetch(request)
+    return response
+  }
+  }
+
+  
